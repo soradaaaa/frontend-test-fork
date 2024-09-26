@@ -5,6 +5,8 @@ import React from 'react'
  *
  * ボタンコンポーネント
  */
+import React from 'react';
+import Question_03_Component from './Question_03_Component';
 
 export default function Question_03_Component(props) {
   return (

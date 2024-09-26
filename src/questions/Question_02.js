@@ -30,10 +30,12 @@ export default function Question_02() {
     { "name" : "沖縄県", "population" : 1467480 }
   ];
 
+  const sortedKyusyu = [...kyusyu].sort((a, b) => b.population - a.population);
+
   const result = kyusyu.map((el, index) => {
     return (
       <li key={index}>
-        <div>No.</div>
+         <div>No.{index + 1}</div>
         <div>{el.name}</div>
         <div>{el.population} 人</div>
       </li>
